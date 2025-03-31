@@ -1,3 +1,6 @@
+---
+sort: 1
+---
 # PHPの書き方
 
 PHPにおける次の１～４の書き方についてサンプルコードを示します。
@@ -53,20 +56,29 @@ PHPでは、変数を「**$変数名**」で指定します。
 
 ブラウザ上で確認をするために、開発環境に切り替えます。
 
-1. VScodeで、cloneしたディレクトリ`04-basic-php-GitHubのユーザー名`が開かれていることを確認してください。
-2. コマンドパレットを開き(Ctrl-Shift-P Macは、(Cmd-Shift-P))、といれ、`rebuild`と入れてみてください。これで、 `Dev Container: Rebuild and Reopen in Container` が出てくるので選んでください。 ![](./images/type-rebuild.png)
-3. 構成を読み取り、選択肢が出てきます、 **PHP実習環境** の側を選んでください。 ![](./images/select-phpdev.png)
-4. しばらく構成処理が行われ(CPUパワーとネットワークに依存)、構成が行われます。 ![](./images/reconfiguring-window.png)
-  - 気になる方はログを出すようにすると進行状況がわかります。 ![](./images/reconfigure-view-log.png)
-5. `04-BASIC-PHP-ユーザー名[開発コンテナー...`というプルダウンをクリックし、`public`ディレクトリがあればOKです。他のディレクトリやファイルは授業中にはさわりません。<br>![](./images/done.png)
-6. 開発環境で操作しているとき、VSCode下部にある**ポート**にて、Webサーバーとの接続先が出るようになっています。![](./images/port-view.png)
-7. 今回は1行しかないので、マウスカーソルをあてる(ホバーする)と、地球マークが出てくるので選んでください。![](./images/port-view-hover.png)
-
-8. これでブラウザに渡されて結果の確認ができます。今回の課題は `sample1.php` なので、以下の手順で表示中のページのリンクに `sample1.php` を追加してみてください。
+1. VScodeで、cloneしたディレクトリ`04-basic-php-...`を開く
+2. コマンドパレットを開き(Ctrl-Shift-P Macは、(Cmd-Shift-P))、`rebuild`と入力する
+3. `Dev Container: Rebuild and Reopen in Container` をクリック<br>
+   ![](./images/type-rebuild.png)
+4. `PHP実習環境` をクリック<br>
+    ![](./images/select-phpdev.png)
+5. 環境が構成されるまでしばし待つ
+   ![](./images/reconfiguring-window.png)
+6. `04-BASIC-PHP-ユーザー名[開発コンテナー...`というプルダウンをクリックし、`public`ディレクトリがあればOK<br>
+   ※他のディレクトリやファイルは授業中にはさわりません。<br>
+   ![](./images/done.png)
+7. VSCode下部にある**ポート**にて、Webサーバーとの接続先が出ることを確認する<br>
+   ![](./images/port-view.png)
+8. マウスカーソルをあてる(ホバーする)と、地球マークが出てくるのでクリックする<br>
+   ![](./images/port-view-hover.png)
+9.  以下の手順で、ブラウザに`sample1.php`が表示されればOK<br>
 
    1. Ctrl-L(Cmd-L)を押すと大抵のブラウザはアドレス欄を編集できるようになります。
-   2. アドレスの末尾に `/sample1.php` を付けてください。 ![](./images/add-hello.png)
-   3.  ファイルを作成していれば内容が出てきます。![](./images/sample1_display.png)
+   2. アドレスの末尾に `/sample1.php` を付ける
+   3. 以下のように表示されればOK<br>
+      ![](./images/sample1_display.png)
 
-**ダブルクォーテーション内で、変数を使用する場合、前後に「半角スペース」を必ず記述してください。**
+```warning
+### ダブルクォーテーション内で、変数を使用する場合、前後に「半角スペース」を必ず記述してください
 上記の`sample1.php`の場合、ダブルクォーテーション内の変数`$num`の前後に半角スペースがないと`Undefined variable: numが表示されます。`というエラーとなります。
+```
