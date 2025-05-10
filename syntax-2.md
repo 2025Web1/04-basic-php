@@ -10,7 +10,7 @@ PHPで主に使う演算子は以下のとおりです。
 |演算子|意味|
 | - | - |
 |\*\*|べき乗　$a \*\* $b  で aのb乗 を計算する（PHP5.6より）|
-|++&nbsp;&nbsp;&nbsp;&nbsp;--|インクリメント（１を加算）、デクリメント（１を減算）|
+|++&nbsp;&nbsp;&nbsp;&nbsp;---|インクリメント（１を加算）、デクリメント（１を減算）|
 |!|論理（否定）|
 |\*&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;%|乗算、　除算、　剰余|
 |+&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;&nbsp;&nbsp;&nbsp;.(ドット)|加算、　減算、　文字列の結合|
